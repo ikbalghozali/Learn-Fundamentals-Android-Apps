@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailUserActivity"
+    android:background="?attr/background_color">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/detail_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:background="?attr/nav_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp"
+            app:layout_scrollFlags="scroll|enterAlways|snap">
+
+            <ImageView
+                android:id="@+id/img_detail_avatar"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:contentDescription="@string/user_profile_picture"
+                tools:src="@tools:sample/avatars" />
+
+
+            <TextView
+                android:id="@+id/tv_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/name_user"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="?attr/text_color" />
+
+            <TextView
+                android:id="@+id/tv_detail_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/username_user"
+                android:textSize="16sp"
+                android:textColor="?attr/text_color" />
+            <TextView
+                android:id="@+id/tv_detail_bio"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="@string/bio"
+                android:textSize="14sp"
+                android:textColor="?attr/text_color"
+                android:textAlignment="center"/>
+
+            <ProgressBar
+                android:id="@+id/progress_bar_detail"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_detail_follower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/follower_user"
+                android:textColor="?attr/text_color"
+                app:drawableStartCompat="@drawable/ic_people"/>
+
+            <TextView
+                android:id="@+id/tv_detail_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="2dp"
+                android:gravity="center_horizontal"
+                android:text="@string/company_user"
+                android:textColor="?attr/text_color"
+                app:drawableStartCompat="@drawable/ic_company" />
+
+            <TextView
+                android:id="@+id/tv_detail_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:drawablePadding="2dp"
+                android:gravity="center_horizontal"
+                android:text="@string/location_user"
+                android:textColor="?attr/text_color"
+                app:drawableStartCompat="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/tv_detail_repository"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:drawablePadding="2dp"
+                android:gravity="center_horizontal"
+                android:text="@string/repository_user"
+                android:textColor="?attr/text_color"
+                app:drawableStartCompat="@drawable/ic_repository" />
+            <ToggleButton
+                android:id="@+id/toggleFavorite"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="-44dp"
+                android:background="@drawable/favorite_toggle"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="4dp"
+            android:background="@color/bg_gray_200"
+            android:contentDescription="@string/tab"
+            app:tabBackground="@drawable/tab_layout_selector"
+            app:tabIndicatorColor="@color/orange"
+            app:tabSelectedTextColor="@color/orange"
+            app:tabTextColor="@android:color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager_Detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

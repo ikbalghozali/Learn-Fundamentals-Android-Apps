@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_500">#17278B</color>
+    <color name="blue_200">#2329A3</color>
+    <color name="blue_700">#15196B</color>
+    <color name="primaryDarkColor">#001970</color>
+    <color name="secondaryColor">#ff5722</color>
+    <color name="secondaryLightColor">#ff8a50</color>
+    <color name="secondaryTextColor">#000000</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg_black">#080012</color>
+    <color name="orange">#DC491B</color>
+    <color name="bg_gray_200">#514E4E</color>
+    <color name="bg_gray_100">#A5A5A5</color>
+    <color name="bg_gray_500">#333333</color>
+</resources>

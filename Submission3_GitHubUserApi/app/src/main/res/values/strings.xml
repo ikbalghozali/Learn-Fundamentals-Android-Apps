@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Github User</string>
+    <string name="search">Search…</string>
+    <string name="image_arrow">Image Arrow</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="setting">Setting</string>
+    <string name="favorite">favorite</string>
+    <string name="follower_user">Followers</string>
+    <string name="following_user">Following</string>
+    <string name="desc">Image</string>
+    <string name="not_found">Not Found</string>
+    <string name="img_start">searching first</string>
+    <string name="username_user">Username</string>
+    <string name="name_user">Name</string>
+    <string name="company_user">Company</string>
+    <string name="location_user">Location</string>
+    <string name="repository_user">Repository</string>
+    <string name="user_profile_picture">Profile Picture</string>
+    <string name="bio">Bio</string>
+    <string name="tab">Tab</string>
+    <string name="user_detail">User Detail</string>
+
+
+</resources>
